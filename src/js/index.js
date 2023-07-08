@@ -4,10 +4,11 @@ const breedSelect = document.querySelector('.breed-select');
 const catInfo = document.querySelector('.cat-info');
 const loader = document.querySelector('.loader');
 
-loader.style.display = 'none';
+loader.classList.remove('inv');
 
 fetchBreeds()
   .then(data => {
+    loader.classList.add('inv');
     const placeholderOption = document.createElement('option');
     placeholderOption.value = '';
     placeholderOption.textContent = 'select a cat';
@@ -55,5 +56,5 @@ function createCat(cats, title) {
             </div>`;
   }, '');
   catInfo.innerHTML = markup;
-  loader.style.display = 'none';
+  loader.classList.remove('inv');
 }

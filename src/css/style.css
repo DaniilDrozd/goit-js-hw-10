@@ -8,7 +8,7 @@ body {
 }
 .breed-select {
   margin: 0 auto;
-  width: 250px;
+  width: 280px;
   height: 46px;
   line-height: 30px;
   background-color: #c3cdeb;
@@ -44,6 +44,7 @@ h3 {
 .inv {
   display: none;
 }
+
 .loader {
   position: fixed;
   top: 50%;
