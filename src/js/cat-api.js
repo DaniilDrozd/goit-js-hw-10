@@ -1,18 +1,6 @@
 const BASE_URL = 'https://api.thecatapi.com/v1/';
 const API_KEY =
   'live_gQ9d6291XE7YOO6cVkJSOajXrnsBkKtbEtDhuAYPvUIQwhBSvevy0efyFS2cix4J';
-// import { Notify } from 'notiflix/build/notiflix-notify-aio';
-
-// export const notifyFailure = errorMessage => {
-//   Notify.failure(errorMessage, {
-//     timeout: 6000,
-//     width: '550px',
-//     borderRadius: '50px',
-//     clickToClose: true,
-//     position: 'center-top',
-//     fontSize: '18px',
-//   });
-// };
 
 export const fetchBreeds = function () {
   return fetch(`${BASE_URL}breeds?api-key=${API_KEY}`).then(response => {

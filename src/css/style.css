@@ -2,14 +2,14 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Caprasimo', cursive;
-  background: color #7f7f7f;
+  font-family: cursive;
+  background-color: #2fbdff6b;
   line-height: 1.5;
 }
 .breed-select {
   margin: 0 auto;
   width: 250px;
-  height: 36px;
+  height: 46px;
   line-height: 30px;
   background-color: #c3cdeb;
   border: outset darkgrey;
@@ -29,6 +29,7 @@ h3 {
 }
 
 .cat-info {
+  padding-top: 40px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -39,8 +40,9 @@ h3 {
   width: 600px;
   font-size: 20px;
 }
+
 .inv {
-  visibility: hidden;
+  display: none;
 }
 .loader {
   position: fixed;

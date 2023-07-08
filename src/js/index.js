@@ -26,18 +26,18 @@ fetchBreeds()
   });
 
 breedSelect.addEventListener('change', function () {
-  loader.classList.remove('invisible');
+  loader.classList.remove('inv');
 
   const value = breedSelect.options[breedSelect.selectedIndex].value;
   const name = breedSelect.options[breedSelect.selectedIndex].text;
 
   fetchCatByBreed(value)
     .then(function (catData) {
-      loader.classList.add('invisible');
+      loader.classList.add('inv');
       createCat(catData, name);
     })
     .catch(function () {
-      loader.classList.add('invisible');
+      loader.classList.add('inv');
       Notiflix.Notify.failure(
         'Oops! An error occurred! Try reloading the page!'
       );
