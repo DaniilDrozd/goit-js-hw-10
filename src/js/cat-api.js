@@ -17,7 +17,7 @@ const API_KEY =
 export const fetchBreeds = function () {
   return fetch(`${BASE_URL}breeds?api-key=${API_KEY}`).then(response => {
     if (!response.ok) {
-      notifyFailure(' Oops! Something went wrong! Try reloading the page!');
+      notifyFailure(' Oops! An error occurred! Try reloading the page!');
     }
     return response.json();
   });
@@ -29,7 +29,7 @@ export const fetchCatByBreed = function (breedId) {
   )
     .then(response => {
       if (!response.ok) {
-        notifyFailure('Oops! Something went wrong! Try reloading the page!');
+        notifyFailure('Oops! An error occurred! Try reloading the page!');
       }
       return response.json();
     })
