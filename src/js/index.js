@@ -56,5 +56,5 @@ function createCat(cats, title) {
             </div>`;
   }, '');
   catInfo.innerHTML = markup;
-  loader.classList.remove('inv');
+  loader.classList.add('inv');
 }
